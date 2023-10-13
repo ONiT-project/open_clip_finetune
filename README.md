@@ -8,7 +8,7 @@ In the current version, the OpenCLIP ViT-B-32' model (pretrained on the laion400
 More detailed documentation will be provided soon. WORK IN PROGRESS...
 
 # Keywords
-Digital Humanities, Artificial Intelligence, Computer Vision, Book History, Image Classification, Early Modern Prints, Multi-Modal Models
+Digital Humanities, Artificial Intelligence, Computer Vision, Book History, Image Classification, Early Modern Prints, Multi-Modal Contrastive Learning
 
 # References
 This work continues our experiments done with a CLIP zero-shot model and the ICONCLASS AI Test Set, which were published in a conference paper at the Digital History Tagung 2023 in Berlin, DE:
