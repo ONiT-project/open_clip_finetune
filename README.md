@@ -1,5 +1,5 @@
 # OpenCLIP Fine-Tuning
-First experiments for fine-tuning the open source implementation of CLIP ([OpenCLIP](https://github.com/mlfoundations/open_clip)) with the [WiSE-FT approach](https://github.com/mlfoundations/wise-ft) for computational, multi-modal applications in the Digital Humanities, in particular History domains (early book prints, 16th-19th century, image and text analysis).
+First experiments for fine-tuning the open source implementation of CLIP ([OpenCLIP](https://github.com/mlfoundations/open_clip)) with the [WiSE-FT approach](https://github.com/mlfoundations/wise-ft) for computational, multi-modal applications in the Digital Humanities, in particular History domains (early modern book prints, 16th-19th century, image and text analysis).
 
 The notebook included in this repository contains interim results of our on-going experiments for fine-tuning OpenCLIP (contrastive learning) with data from the [ICONCLASS AI Test Set](https://iconclass.org/testset/).
 
