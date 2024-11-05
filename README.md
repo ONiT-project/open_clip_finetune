@@ -1,5 +1,5 @@
 # OpenCLIP Fine-Tuning
-The code published in this repository follows the [WiSE-FT](https://github.com/mlfoundations/wise-ft) method for finetuning an [OpenCLIP](https://github.com/mlfoundations/open_clip) model. This work was funded as part of the Austrian Science Fund project Ottoman Nature in Travelogues [(ONiT) project](https://onit.oeaw.ac.at/).
+The code published in this repository follows the [WiSE-FT](https://github.com/mlfoundations/wise-ft) method for finetuning an [OpenCLIP](https://github.com/mlfoundations/open_clip) model. This work was funded as part of the Austrian Science Fund project [Ottoman Nature in Travelogues (ONiT)](https://onit.oeaw.ac.at/).
 
 The latest version of the notebook implements contrastive learning fine-tuning of an OpenCLIP model ('ViT-B-32' pretrained on the LAION 400m dataset) with a sub-set of the [ICONCLASS AI Test Set](https://iconclass.org/testset/) adapted for this task.
 - The training dataset was extracted in context of our conference paper published at the Digital History Tagung 2023, Berlin (vignoli_impact_2023). The subset used for this fine-tuning contains caption-image pairs of the ICONCLASS AI Test Set images featuring nature representations (i.e., flora, fauna, landscapes, and maps).
