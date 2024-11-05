@@ -1,17 +1,17 @@
 # OpenCLIP Fine-Tuning
-First experiments for fine-tuning the open source implementation of CLIP ([OpenCLIP](https://github.com/mlfoundations/open_clip)) with the [WiSE-FT approach](https://github.com/mlfoundations/wise-ft) for computational, multi-modal applications in the Digital Humanities, in particular History domains (early modern book prints, 16th-19th century, image and text analysis).
+The code published in this repository follows the [WiSE-FT](https://github.com/mlfoundations/wise-ft) method for finetuning an [OpenCLIP](https://github.com/mlfoundations/open_clip) model. This work was funded as part of the Austrian Science Fund project Ottoman Nature in Travelogues [(ONiT) project](https://onit.oeaw.ac.at/).
 
-The notebook included in this repository contains interim results of our on-going experiments for fine-tuning OpenCLIP (contrastive learning) with data from the [ICONCLASS AI Test Set](https://iconclass.org/testset/).
+The latest version of the notebook implements contrastive learning fine-tuning of an OpenCLIP model ('ViT-B-32' pretrained on the LAION 400m dataset) with a sub-set of the [ICONCLASS AI Test Set](https://iconclass.org/testset/) adapted for this task.
+- The training dataset was extracted in context of our conference paper published at the Digital History Tagung 2023, Berlin (vignoli_impact_2023). The subset used for this fine-tuning contains caption-image pairs of the ICONCLASS AI Test Set images featuring nature representations (i.e., flora, fauna, landscapes, and maps).
+- The fine-tuned model is used for image similarity and natural language prompt search of nature representations in the image corpus extracted from the printed travelogues. For this, the features of the ONiT image dataset, which were previously extracted from a corpus of ~1500 travelogues on the Ottoman empire printed between 1501 and 1850 ([ONiT Image Extraction](https://github.com/ONiT-project/onit-image-extraction)), are encoded with the fine-tuned model and subsequently searched for similar features. First, the cosine similarity between the encoded image features is computed between a reference image and all other images in the dataset. Second, the cosine similarity between an encoded prompt and all image features in the dataset is computed.
 
-In the current version, the OpenCLIP ViT-B-32' model (pretrained on the laion400m_e31 dataset) has been fine-tuned with a subset of the ICONCLASS AI Test Set, which we have extracted in context of our conference paper published at the Digital History Tagung 2023, Berlin (vignoli_impact_2023). Afterwards, the features of the ONiT image dataset, which were previously extracted from a corpus of ~1500 travelogues on the Ottoman empire printed between 1501 and 1850 ([ONiT Image Extraction](https://github.com/ONiT-project/onit-image-extraction)), are encoded with the fine-tuned model and subsequently searched for similar features. First, the cosine similarity between the encoded image features is computed between a reference image and all other images in the dataset. Second, the cosine similarity between an encoded prompt and all image features in the dataset is computed.
-
-More detailed documentation will be provided soon. WORK IN PROGRESS...
+Code in this notebook was adapted from [Interacting with openCLIP](https://github.com/mlfoundations/open_clip/blob/main/docs/Interacting_with_open_clip.ipynb) with elements adapted from code generated with ChatGPT (free version). Code for the training was adapted from vinson2233 ([CLIP Training Code #83](https://github.com/openai/CLIP/issues/83)) and Silvia Poletti (AIT Austrian Institute of Technology).
 
 # Keywords
 Digital Humanities, Artificial Intelligence, Computer Vision, Book History, Image Classification, Early Modern Prints, Multi-Modal Contrastive Learning
 
 # References
-This work continues our experiments done with a CLIP zero-shot model and the ICONCLASS AI Test Set, which were published in a conference paper at the Digital History Tagung 2023 in Berlin, DE:
+This work complements our experiments done with a CLIP zero-shot model and the ICONCLASS AI Test Set, which were published in a conference paper at the Digital History Tagung 2023 in Berlin, DE:
 
 ```
 @article{vignoli_impact_2023,
