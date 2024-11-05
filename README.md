@@ -5,8 +5,6 @@ The latest version of the notebook implements contrastive learning fine-tuning o
 - The training dataset was extracted in context of our conference paper published at the Digital History Tagung 2023, Berlin (vignoli_impact_2023). The subset used for this fine-tuning contains caption-image pairs of the ICONCLASS AI Test Set images featuring nature representations (i.e., flora, fauna, landscapes, and maps).
 - The fine-tuned model is used for image similarity and natural language prompt search of nature representations in the image corpus extracted from the printed travelogues. For this, the features of the ONiT image dataset, which were previously extracted from a corpus of ~1500 travelogues on the Ottoman empire printed between 1501 and 1850 ([ONiT Image Extraction](https://github.com/ONiT-project/onit-image-extraction)), are encoded with the fine-tuned model and subsequently searched for similar features. First, the cosine similarity between the encoded image features is computed between a reference image and all other images in the dataset. Second, the cosine similarity between an encoded prompt and all image features in the dataset is computed.
 
-Code in this notebook was adapted from [Interacting with openCLIP](https://github.com/mlfoundations/open_clip/blob/main/docs/Interacting_with_open_clip.ipynb) with elements adapted from code generated with ChatGPT (free version). Code for the training was adapted from vinson2233 ([CLIP Training Code #83](https://github.com/openai/CLIP/issues/83)) and Silvia Poletti (AIT Austrian Institute of Technology).
-
 # Keywords
 Digital Humanities, Artificial Intelligence, Computer Vision, Book History, Image Classification, Early Modern Prints, Multi-Modal Contrastive Learning
 
