@@ -9,7 +9,7 @@ The latest version of the notebook implements contrastive learning fine-tuning o
 Digital Humanities, Artificial Intelligence, Computer Vision, Book History, Image Classification, Early Modern Prints, Multi-Modal Contrastive Learning
 
 # References
-This work complements our experiments done with a CLIP zero-shot model and the ICONCLASS AI Test Set, which were published in a conference paper at the Digital History Tagung 2023 in Berlin, DE:
+This work complements our experiments done with a CLIP zero-shot model and the ICONCLASS AI Test Set, which were published in a [conference paper](https://doi.org/10.5281/zenodo.8322397) at the Digital History Tagung 2023 in Berlin, DE:
 
 ```
 @article{vignoli_impact_2023,
